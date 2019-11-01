@@ -48,7 +48,6 @@ public class latih7_grafik_klasik extends AppCompatActivity {
 
     }
 
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_latih7_grafik_klasik,menu);
         return true;
