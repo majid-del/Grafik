@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Button;
 
-public class grafik7_grafik_klasik extends AppCompatActivity {
+import javax.microedition.khronos.opengles.GL10;
+
+public class latih7_grafik_klasik extends AppCompatActivity {
     private Button tekan;
     private GLSurfaceView grafik1;
 
@@ -36,8 +38,14 @@ public class grafik7_grafik_klasik extends AppCompatActivity {
     class HelloESSurfaceView extends GLSurfaceView{
         public HelloESSurfaceView(Context context){
             super(context);
-            setRenderer(new segitiga());
+            setRenderer(new segitiga() {
+                @Override
+                public void onSurfaceChanged(GL10 gl, int width, int height) {
+
+                }
+            });
         }
+
     }
 
     @Override
